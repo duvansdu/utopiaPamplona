@@ -1,0 +1,258 @@
+:root{
+    --color1:#ffffff;
+    --color2:#000000;
+    --color3:#ececec;
+    --color4:#363636;
+    --color5:#5d49d3;
+    --color6:#f58220;
+    --color7:#ffeb3b;
+    --color8:#cbc4f1;
+}
+.caja1{
+    width: 100%;
+    background-color: var(--color6);
+}
+.caja2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.ver{
+    width: 100%;
+    min-height: 30vh;
+}
+.formulario{
+    width: 100%;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.formulario input, .formulario input:focus, .formulario select:focus, .formulario select, .formulario button, .formulario textarea, .formulario textarea:focus{
+    width: 90%;
+    padding: .3rem .5rem;
+    background-color: var(--color3);
+    color: var(--color2);
+    border-radius: 6px;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    margin-bottom: .5rem;
+}
+.cajaFoto{
+    width: 50%;
+}
+.cajaFoto img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.mostrarProductos{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: var(--color3);
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.mostrarProductos::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+  
+.mostrarProductos::-webkit-scrollbar:vertical {
+    width:10px;
+}
+  
+.mostrarProductos::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+  
+.mostrarProductos::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+  
+.mostrarProductos::-webkit-scrollbar-thumb {
+    background-color: var(--color4);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+  
+.mostrarProductos::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+
+/*----loader estilos----------*/
+.preloader {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #eee;
+    border-top: 10px solid var(--cuarto-color);
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*----------------------------*/
+.verFiltro{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cardServicios{
+    width: 100%;
+    height: auto;
+    background-color: var(--color1);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px 0 rgba(112, 112, 112, 0.849);
+    position: relative;
+}
+.cardServiciosInfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 110%;
+    padding: .5rem;
+}
+.cardServiciosInfo input, .cardServiciosInfo input:focus, .cardServiciosInfo input:hover{
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.cardServiciosInfo textarea, .cardServiciosInfo textarea:focus, .cardServiciosInfo textarea:hover{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    height: 80%;
+    width: 100%;
+    background-color: var(--color3);
+    padding: 1rem;
+}
+.cardServiciosFunciones{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.editServicio, .editServicio:focus{
+    background-color: var(--color5);
+    color: var(--color1);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 100%;
+    border-radius: 6px 0 6px 0;
+    width: 100%;
+}
+.cardServiciosIMG{
+    width: 100%;
+    height: auto;
+}
+.cardServiciosIMG img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 0 0 6px;
+}
+.nombreHabit{
+    font-size: 110%;
+    color: var(--color5);
+    font-family: 'Raleway', sans-serif;
+}
+.mensajesFormularioReservas{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--color7);
+    width: 90%;
+    padding-left: 1rem;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+/*----loader estilos----------*/
+.preloader {
+    width: 70px;
+    height: 70px;
+    border: 10px solid #eee;
+    border-top: 10px solid var(--color5);
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  /*----------------------------*/
+@media screen and (min-width: 1024px){
+    .cardServicios{
+        flex-direction: row;
+    }
+    .cardServiciosIMG{
+        width: 30%;
+        height: 100%;
+    }
+    .cardServiciosInfo{
+        width: 50%;
+    }
+    .cardServiciosFunciones{
+        width: 10%;
+    }
+    .formulario{
+        width: 30%;
+    }
+    .caja2{
+        width: 90%;
+    }
+    .caja1{
+        width: 20%;
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "UTOPIA DESIGNS",
+  "short_name": "UTOPIA DESIGNS",
+  "description": "Bienvenid@s a Utopia Designs",
+  "background_color": "#ececec",
+  "theme_color": "#fcb07f",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-CO",
+  "icons": [
+    {
+      "src": "./assets/img/iconos/favicon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/iconos/favicon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/iconos/favicon_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/iconos/favicon_64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/iconos/favicon_32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/iconos/favicon_16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

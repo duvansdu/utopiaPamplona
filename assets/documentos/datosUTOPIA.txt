@@ -1,0 +1,28 @@
+DATOS UTOPIA PAMPLONA
+
+correo 
+https://mail.hostinger.com/?clearSession=true&_user=pagos@utopiapamplona.com&_ga=2.140498737.325636945.1630081444-394119353.1630081444
+pagos@utopiapamplona.com
+Utopiapamplona2020
+
+
+PAYU
+https://merchants.payulatam.com/login/auth
+pagos@utopiapamplona.com
+Utopi4pamplona2020.
+
+PÁGINA WEB
+www.utopiapamplona.com
+utopiapamplona2021@gmail.com
+pass Hoja2020
+
+EPAYCO
+https://dashboard.epayco.com/dashboard
+pagos@utopiapamplona.com
+Utopi4pamplona2020.
+
+Gracias por su amable espera en línea, validando la información de la cuenta epayco JULIETH STEFANY ZAMBRANO RUIZ - 570197 - PERSONA se encuentra validada al 100%, igualmente son sus medios de pagos activos ya puede empezar a realizar sus cobros. Debe tener presente que las personas naturales tendrán acceso a un cupo único por transacción de mínimo $5.000 pesos y un máximo otorgado según esta categoría a la que se encuentre afiliado de $3.000.000 pesos por transacción. Es decir, usted puede realizar mil transacciones en el día lo importante es que cada transacción que le realice sus clientes no supere el tope establecido $3.000.000  
+
+Tenemos habilitado una opción que es modo pruebas, la cual permite que usted genere pagos no reales para que verifique el funcionamiento del procesamiento de los pagos recibidos, este ambiente únicamente se encuentra habilitado para medios de pago como tarjeta de crédito. En la siguiente url podrá encontrar los datos de las tarjetas para que pueda realizar este proceso https://docs.epayco.co/tools/testing
+
+Tenga en cuenta que para pasar a modo producción debe de ingresar a su Dashboard en la parte superior central donde dice pruebas-producción este botón debe de quedar en color naranja, a su vez debe de verificar la integración de el botón de pago que se encuentre en producción

@@ -1,0 +1,222 @@
+:root{
+    --color1:#ffffff;
+    --color2:#000000;
+    --color3:#ececec;
+    --color4:#363636;
+    --color5:#5d49d3;
+    --color6:#f58220;
+    --color7:#ffeb3b;
+    --color8:#cbc4f1;
+}
+.caja1{
+    width: 15%;
+}
+.caja2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.titulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color6);
+    padding: .5rem;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table{
+    width: 100%;
+}
+.cajaInformes{
+      color: var(--color2);
+      background-color: var(--color1);
+      position: relative;
+      width: 90%;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+}
+.formulario{
+        width: 100%;
+        height: auto;
+        background-color: var(--color1);
+        border-radius: 6px;
+        padding-top: 3rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+}
+.respuesta{
+        width: 100%;
+        height: 70vh;
+        background-color: var(--color1);
+        padding-top: 2rem;
+        overflow: hidden;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+}
+.respuesta::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+  
+.respuesta::-webkit-scrollbar:vertical {
+    width:10px;
+}
+  
+.respuesta::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+  
+.respuesta::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+  
+.respuesta::-webkit-scrollbar-thumb {
+    background-color: var(--color4);
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+  
+.respuesta::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.total{
+      width: 100%;
+      color: var(--color7);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding-left: 2rem;
+      padding-top: 2rem;
+      font-size: 120%;
+}
+.formularioVentas{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+.formularioVentas select{
+      width: 25%;
+      height: auto;
+      border: none;
+      outline: none;
+      padding: .5rem;
+      border-radius: 5px;
+      padding-left: .5rem;
+      background-color: var(--color6);
+      color: var(--color2);
+      margin-left: .5rem;
+      margin-top: .5rem;
+      margin-bottom: 1rem;
+}
+.btnInforme{
+      position: absolute;
+      top: 0;
+      right: .5rem;
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      background-color: var(--color6);
+      color: var(--color4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 120%;
+}
+.btnInforme:hover{
+    background-color: var(--color7);
+    color:var(--color1);
+}
+.btnExcel{
+    position: absolute;
+    top: 0;
+    right: 3.5rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: var(--color6);
+    color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+}
+.btnExcel:hover{
+    background-color: var(--color5);
+    color: var(--color4);
+}
+.botonActualizarEstado{
+    padding: 1rem;
+    background-color: var(--color3);
+    color: var(--color4);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.formReserva{
+    width: 100%;
+    background-color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.formReserva input, .formReserva select{
+    width: 100%;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: .3rem 1rem;
+}
+.formReserva button, .formReserva button:focus, .formReserva button:hover, .btnAgregar, .btnAgregar:focus, .btnAgregar:hover{
+    padding: .3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--color6);
+    color: var(--color1);
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+}
+@media screen and (min-width: 1024px){
+    .cajaInformes{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .formulario{
+        width: 25%;
+        min-height: 70vh;
+        margin-bottom: 0;
+    }
+    .respuesta{
+        width: 70%;
+        margin-bottom: 0;
+    }
+}
+  

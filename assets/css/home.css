@@ -1,0 +1,346 @@
+:root{
+  --color1:#fcb07f;
+  --color2:#000000;
+  --color3:#ffffff;
+  --color4:#414141;
+  --color5_1:#6861d5;
+  --color5:#71bced;
+  --color6:#ffffff;
+  --color7:#ff0000;
+  --color8: #6961d5d0;
+  --color9: #1a1a1ad8;
+}
+.GaleriaHome{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.GaleriaHome .imgLogo{
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    z-index: 10;
+}
+.GaleriaHome .imgPresentacion{
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0; 
+    z-index: 10;
+}
+.subtitulo{
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    z-index: 1;
+}
+.subtitulo span{
+    color: var(--color3);
+    font-family: 'Dancing Script', cursive;
+    font-size: 350%;
+    opacity: .5;
+}
+/*--------estilos slider home--------*/
+.titulo{
+    background-color: var(--color3);
+    color: var(--color4);
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.vista{
+  width: 100%;
+  height: 85vh;
+  position: relative;
+}
+.slider{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.slider div{
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+.botones{
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.botones span{
+  width: 3rem;
+  height: 3rem;
+  font-size: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color4);
+  color: var(--color6);
+  cursor: pointer;
+  margin-right: .5rem;
+}
+.presentacion{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+}
+.presentacion .texto{
+  position: absolute;
+  bottom: 5rem;
+  left: .5rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.842);
+  z-index: 10;
+  border-radius: 6px;
+}
+.presentacion .texto a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color7);
+  color: var(--color5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  border-radius: 20px / 20px;
+  border: none;
+  padding: .5rem;
+  text-decoration: none;
+  outline: none;
+}
+.presentacion .imagen{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.presentacion .imagen img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 50%;
+}
+.presentacion2{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #ffffff 0%, var(--color2) 100%);
+  color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+.presentacion2 img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 0%;
+}
+.presentacion2 .caja2{
+  width: 280px;
+  height: auto;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-family: 'Raleway', sans-serif;
+  padding: 4rem 1rem;
+  border-radius: 20px / 20px;
+  font-size: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+.presentacion2 .caja2 a{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  border-radius: 20px / 20px;
+  border: none;
+  padding: .5rem;
+  text-decoration: none;
+  outline: none;
+}
+.presentacion3{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #ffffff 0%, var(--color7) 100%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.presentacion3 img{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 85% 50%;
+}
+.presentacion3 .caja2{
+  width: 250px;
+  height: auto;
+  position: absolute;
+  left: 2rem;
+  bottom: 20rem;
+  font-family: 'Raleway', sans-serif;
+  padding: 3rem 1rem;
+  border-radius: 20px / 20px;
+  font-size: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.presentacion3 .caja2 a{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color5);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  border-radius: 20px / 20px;
+  border: none;
+  padding: .5rem;
+  text-decoration: none;
+  outline: none;
+}
+  /*-----------------------------------*/
+  /*_____ GALERIA DE IMG__________*/
+.cajaC{
+  width: 90%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.galeria{
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-auto-rows: minmax(20rem, auto);
+  grid-auto-flow: dense;
+  gap: 2rem;
+}
+.galeria .items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.galeria .items img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.galeriaOculta{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  z-index: 100;
+  background-color: #141414cc;
+  opacity: 1;
+  color: var(--color1);
+  transition: transform .5s ease, opacity .5s ease;
+  transform: translate(0, -100%);
+  padding-top: 4rem;
+}
+.activargaleriaOculta{
+  transform: translate(0,0);
+  opacity: 1;
+  z-index: 10;
+}
+.cerrargaleriaOculta{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 150%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.imgG{
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+}
+.imgG img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%; 
+}
+/*//////////////////////////////*/
+
+@media screen and (min-width: 1024px){
+  .GaleriaHome .imgPresentacion{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+  }
+  .subtitulo{
+      display: flex;
+  }
+}

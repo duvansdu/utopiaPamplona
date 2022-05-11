@@ -1,0 +1,149 @@
+:root{
+  --color1:#ffffff;
+  --color2:#2b2b2b;
+  --color3:#f9b079;
+  --color4:#fcfcfc;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--font-size);
+    scroll-behavior: smooth; 
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  order: 1;
+  min-height: 100vh;
+  width: 100%;
+}
+/*//////////estilos header//////////*/
+.menu{
+  position: fixed;
+  bottom: .5rem;
+  right: .5rem;
+  font-size: 200%;
+  cursor: pointer;
+  z-index: 10;
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: .2rem;
+  border-radius: 6px;
+}
+.cerrar{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 200%;
+  cursor: pointer;
+  z-index: 11;
+  color: var(--color1);
+  display: none;
+}
+.ocultar{
+  display: none;
+}
+.desocultar{
+  display: block;
+}
+.header{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translate(-100%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: var(--color2);
+  color: var(--color1);
+}
+.is-active{
+  transform: translate(0,0);
+  opacity: .9;
+}
+.navegador{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.subNavegador{
+  width: 100%;
+  color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: var(--color1);
+  padding-bottom: 1rem;
+}
+.navegador a{
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 150%;
+  margin-bottom: .5rem;
+  font-family: 'Roboto', sans-serif;
+}
+.salir{
+  position: absolute;
+  width: 100%;
+  color: var(--color1);
+  background-color: var(--color3);
+  bottom: 0;
+  font-size: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: .2rem;
+}
+.editarPerfil{
+  text-decoration: none;
+  color: var(--color1);
+  cursor: pointer;
+}
+.editarPerfil:hover{
+  text-decoration: none;
+  color: var(--color1);
+}
+.salir:hover{
+  color: var(--color1);
+}
+/*----loader estilos----------*/
+.preloader {
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid var(--color2);
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/*-----------------------------*/
+@media screen and (min-width: 1024px){
+}

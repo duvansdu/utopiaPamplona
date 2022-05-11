@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+
+RewriteEngine On
+
+RewriteRule ^([0-9a-zA-Z]*)$ imagenes.php?peticion=$1

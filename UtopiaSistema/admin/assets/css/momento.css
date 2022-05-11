@@ -1,0 +1,44 @@
+.momento{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostarMomentos{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mostarMomentos form{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px){
+    .momento{
+        width: 50%;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
