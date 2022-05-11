@@ -9,9 +9,9 @@ abstract class Model{
 
 	//datos reales hostinger
 	private static $db_host = 'localhost';
-	private static $db_user = 'u297939733_utopia';
+	private static $db_user = 'u393872018_utopia';
 	private static $db_pass = 'Utopiapamplon4';
-	private static $db_name = 'u297939733_utopia';
+	private static $db_name = 'u393872018_utopia';
 
 	private static $db_charset = 'utf8';
 	private $conn;
