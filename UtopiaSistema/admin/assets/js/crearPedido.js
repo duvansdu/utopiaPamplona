@@ -56,17 +56,12 @@ const verUsuarios = () =>{
  
     
         <div class="eliminar">
-            <b class="d-none">${element.ped_id}</b>  
-            <button class="eliminar">eliminar</button>
-        </div>
-        <div class="eliminar">
+            <b class="d-none">${element.ped_id}</b> 
+            <i class="fas fa-trash-alt fa-2x"></i>
         <b class="d-none">${element.ped_id}</b>  
-        <button class="imprimir">Imprimir</button>
-        </div></br>
-
-        <div class="Actualizar">
+        <i class="fas fa-print fa-2x"></i>
         <b class="d-none">${element.ped_id}</b>  
-        <button class="aca">Actualizar</button>
+        <i class="fas fa-edit fa-2x"></i>
         </div>
         
     </div>
@@ -111,7 +106,7 @@ document.addEventListener('DOMContentLoaded', verUsuarios)
 
 
 verSocios.addEventListener('click',(e)=>{
-    if(e.target.className === 'eliminar'){
+    if(e.target.className === 'fas fa-trash-alt fa-2x'){
         console.log('eliminar')
         console.log(e)
         let ref = e.target.parentElement.children[0].innerHTML
@@ -145,7 +140,7 @@ verSocios.addEventListener('click',(e)=>{
 
 
 verSocios.addEventListener('click',(e)=>{
-    if(e.target.className === 'imprimir'){
+    if(e.target.className === 'fas fa-print fa-2x'){
         console.log('clic en imprimir')
         console.log(e)
         let ref = e.target.parentElement.children[0].innerHTML
@@ -253,7 +248,7 @@ panel.addEventListener('click',(e)=>{
             })
             .then( data => data.json() )
             .then( dato =>{
-                alert('se actualizo el producto')
+                alertify.alert('Se Editó un Pedido'); 
                 panel.classList.remove('is-active')
                 panel.innerHTML = ''
                 verUsuarios()
@@ -263,7 +258,7 @@ panel.addEventListener('click',(e)=>{
 })
 
 verSocios.addEventListener('click',(e)=>{
-    if(e.target.className === 'aca'){
+    if(e.target.className === 'fas fa-edit fa-2x'){
         console.log('editar')
         window.scrollTo({
             top: 0,
@@ -292,7 +287,7 @@ verSocios.addEventListener('click',(e)=>{
                     <h4>Nombre:</h4>
                     <div class="inputDi1">
                         <input type="text" name="ped_nombre" class="" value="${dato[0].ped_nombre}">
-                    </div></br>
+                    </div>
                     <h4>Teléfono:</h4>
                     <div class="inputDi1">
                         <input type="number" class="" name="ped_telefono" value="${dato[0].ped_telefono}">

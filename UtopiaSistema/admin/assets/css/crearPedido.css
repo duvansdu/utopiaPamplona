@@ -16,6 +16,12 @@
     margin-left: 230px;
     
 }
+.eliminar{
+  width: 100%;
+  display: flex;
+  align-items:flex-start;
+  justify-content:space-evenly;
+}
 .descriSoc{
     color: #000;
     font-size: 15px;
@@ -206,9 +212,13 @@ input:focus {
   top:-4px;
   right:-5px;
 }
+.inputDi1{
+  display: flex;
+  justify-content: flex-start;
+}
 /*----------------------------------------------*/
 .aca {
-    width: 40%;
+    width: 50%;
     border-color: #3498db;
     border-radius: 10px;
     color: #fff;
@@ -377,8 +387,17 @@ flex-direction: column;
 .is-active{
   transform: translate(0,0);
 }
+.formEditarFull{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
 .formEditarFull h4{
   color:#000;
+  display:flex;
+  justify-content: flex-start;
+  align-items:flex-start;
 }
 
 
