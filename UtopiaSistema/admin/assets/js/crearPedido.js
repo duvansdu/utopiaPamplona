@@ -175,17 +175,17 @@ verSocios.addEventListener('click',(e)=>{
             doc.setFontSize(18);
             doc.text(10, 70,'Nombre del cliente: ');
             doc.setFontSize(18);
-            doc.text(70, 70, element.ped_nombre);
+            doc.text(10, 80, element.ped_nombre);
             doc.setFontSize(18);
-            doc.text(10, 80,'Fecha del Pedido: ');
+            doc.text(10, 90,'Fecha del Pedido: ');
             doc.setFontSize(18);
-            doc.text(65, 80, element.ped_fecha);
+            doc.text(65, 90, element.ped_fecha);
             doc.setFontSize(18);
-            doc.text(10, 90,'Teléfono: ');
+            doc.text(10, 100,'Teléfono: ');
             doc.setFontSize(18);
-            doc.text(65, 90, element.ped_telefono);
+            doc.text(65, 100, element.ped_telefono);
             doc.setFontSize(18);
-            doc.text(10, 100,'Descripción: ');
+            doc.text(10, 110,'Descripción: ');
             doc.setFontSize(18);
             
             /*var hola = element.ped_descripcion.split(' ') 
@@ -193,7 +193,7 @@ verSocios.addEventListener('click',(e)=>{
             var dato = hola.length
             doc.text(10, 110, hola);*/
             doc.setFontSize(10);
-            doc.text(5, 110, element.ped_descripcion);
+            doc.text(10, 120, element.ped_descripcion);
             
             doc.setFontSize(18);
             doc.setLineWidth(1.5)
