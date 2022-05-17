@@ -10,11 +10,11 @@ public function __construct($route){
 	//programacion del enrutador
 		
 	if($_SESSION['utopia']){
-		$this->route = isset($_GET['r']) ? $_GET['r'] : 'home' ;
+		$this->route = isset($_GET['r']) ? $_GET['r'] : 'crearPedido' ;
 		$controller = new ViewController();
 		switch ($this->route) {
-		case 'home':
-		if (!isset($_POST['r'])) {$controller->load_view('home');}
+		case 'crearPedido':
+		if (!isset($_POST['r'])) {$controller->load_view('crearPedido');}
 		break;
 
 		case 'momento'://variable get
